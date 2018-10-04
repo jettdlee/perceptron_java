@@ -44,12 +44,28 @@ public class Train{
             System.out.println(listCount);
 
             double[][] data_arr = new double[listCount][4];
+            String[] y_label = new String[listCount];
 
             for(int i = 0; i >= listCount-1; i++){
                 String data_row = list.get(i);
+                line_split = data_row.split(",");
+
+                for(int j = 0; j >= 4; j++){
+                    data_element = line_split[j];
+                    data_arr[i][j] = data_element;
+
+
+                }
+
+                
 
 
             }
+
+
+
+
+
 
 
         } catch (Exception e){//Catch exception if any
