@@ -10,7 +10,7 @@ public class Perceptron{
         epoch = iter;
         eta = lr;
 
-        System.out.print(epoch+","+eta);
+        //System.out.print(epoch+","+eta);
 
 
     }
